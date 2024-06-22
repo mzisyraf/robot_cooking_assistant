@@ -6,11 +6,11 @@ from ultralytics import YOLO
 
 # Check if CUDA (GPU) is available
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-print(f"Using device: {device}")
+print(f"Using device: {device}\n")
 
 # Get the current working directory
 HOME = os.getcwd()
-print(f"Current working directory: {HOME}")
+print(f"Current working directory: {HOME}\n")
 
 # Run ultralytics checks
 ultralytics.checks()
@@ -18,7 +18,7 @@ ultralytics.checks()
 # Create a directory for datasets
 datasets_dir = os.path.join(HOME, 'datasets')
 os.makedirs(datasets_dir, exist_ok=True)
-print(f"Datasets directory: {datasets_dir}")
+print(f"Datasets directory: {datasets_dir}\n")
 
 # Change the working directory to datasets directory
 os.chdir(datasets_dir)
@@ -42,7 +42,7 @@ else:
 
 # Verify the dataset structure
 if not os.path.exists(os.path.join(dataset_path, 'data.yaml')):
-    raise FileNotFoundError(f"'data.yaml' not found in {dataset_path}")
+    raise FileNotFoundError(f"'data.yaml' not found in {dataset_path}\n")
 
 # Change back to the original HOME directory
 os.chdir(HOME)
