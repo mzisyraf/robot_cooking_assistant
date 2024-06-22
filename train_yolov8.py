@@ -5,7 +5,7 @@ from roboflow import Roboflow
 from ultralytics import YOLO
 
 # Check if CUDA (GPU) is available
-device = 'cuda' if torch.cuda.is_available() else 'cpu'
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print(f"Using device: {device}")
 
 # Get the current working directory
