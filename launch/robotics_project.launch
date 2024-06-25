@@ -1,0 +1,15 @@
+<launch>
+    <!-- Launching object detection node -->
+    <node name="object_detection" pkg="cooking_assistant" type="object_detection.py" output="screen"/>
+
+    <!-- Launching ingredient detection node -->
+    <node name="ingredient_detection" pkg="cooking_assistant" type="ingredient_detection_node.py" output="screen"/>
+
+    <!-- Launching sound play node -->
+    <node name="soundplay_node" pkg="sound_play" type="soundplay_node.py" output="screen"/>
+
+    <!-- Launching text to speech controller node with parameter -->
+    <node name="text_to_speech_controller" pkg="cooking_assistant" type="text_to_speech_controller.py" output="screen">
+        <param name="enable_text_to_speech" value="True"/>
+    </node>
+</launch>

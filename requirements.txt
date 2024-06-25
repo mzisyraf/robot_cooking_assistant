@@ -1,0 +1,6 @@
+openai
+opencv-python
+rospy
+sound-play
+ultralytics
+soundplay

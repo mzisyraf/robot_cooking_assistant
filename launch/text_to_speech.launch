@@ -1,0 +1,4 @@
+<launch>
+    <!-- Launching text to speech node -->
+    <node name="text_to_speech_node" pkg="cooking_assistant" type="text_to_speech.py" output="screen"/>
+</launch>
