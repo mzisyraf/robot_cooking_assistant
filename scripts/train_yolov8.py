@@ -47,7 +47,7 @@ if not os.path.exists(os.path.join(dataset_path, 'data.yaml')):
 # Change back to the original HOME directory
 os.chdir(HOME)
 
-# Train the YOLOv8 model using the Python API and the GPU if available
+# Train the YOLOv8 model
 model = YOLO('yolov8s.pt').to(device)
 
 # Check if valid images directory exists

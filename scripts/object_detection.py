@@ -18,7 +18,7 @@ class ObjectDetectionNode:
 
         self.detected_items = []
         self.start_time = time.time()
-        self.detection_timeout = 10  # 10 seconds timeout
+        self.detection_timeout = 10
         rospy.loginfo("Object Detection Node Initialized")
 
     def run(self):
@@ -29,7 +29,7 @@ class ObjectDetectionNode:
             if success:
                 # Run YOLOv8 inference on the frame
                 results = self.model(frame)
-                frame_detections = False  # Flag to check if any object is detected in the current frame
+                frame_detections = False
 
                 # Check the results for detected objects
                 for result in results[0].boxes:

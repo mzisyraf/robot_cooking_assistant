@@ -56,7 +56,6 @@ class TextToSpeechNode:
 
     def start_text_to_speech(self, request):
         rospy.loginfo("Text-to-Speech functionality started")
-        # Additional initialization or setup if needed
         return EmptyResponse()
 
 
