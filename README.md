@@ -38,7 +38,7 @@ This is a project done for WID3010 Autonomous Robotics session 2023/2024 where w
    To install dependencies, run the `requirements.txt` file, run the following command in the project root directory:
 
    ```bash
-   cd ~/catkin_ws/src/robot_cooking assistant
+   cd ~/catkin_ws/src/robot_cooking_assistant
    pip install -r requirements.txt
    ```
 
