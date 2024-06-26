@@ -12,10 +12,15 @@ This is a project done for WID3010 Autonomous Robotics session 2023/2024 where w
 1. ### Create a Catkin Workspace and Change Your Directory to Go to the Workspace
 
    To create a Catkin workspace and navigate to it, run the following commands:
+   
+   ```bash
+   mkdir catkin_ws
+   cd catkin_ws/
+   ```
+   Create a src folder under the Catkin workspace and build the workspace:
 
    ```bash
-   mkdir -p ~/catkin_ws/src
-   cd ~/catkin_ws
+   mkdir src
    catkin_make
    ```
 
@@ -28,7 +33,7 @@ This is a project done for WID3010 Autonomous Robotics session 2023/2024 where w
    git clone https://github.com/mzisyraf/robot_cooking_assistant.git
    ```
 
-3. ### Build the Project Using `catkin_make`
+4. ### Build the Project Using `catkin_make`
 
    To build the project using `catkin_make`, run the following command in the `catkin_ws` directory:
 
@@ -37,19 +42,20 @@ This is a project done for WID3010 Autonomous Robotics session 2023/2024 where w
    catkin_make
    ```
 
-4. ### Run the Launch Sequence File
+5. ### Run the Launch Sequence File
 
    To run the launch sequence file, execute the following command:
 
    ```bash
-   ~/catkin_ws/src/robot_cooking_assistant/scripts/launch_sequence.sh
+   cd ~/catkin_ws/src/robot_cooking_assistant/scripts/
+   ./launch_sequence.sh
    ```
 
-5. ### Point Ingredients to the Camera
+6. ### Point Ingredients to the Camera
 
    After pointing all ingredients to the camera, wait until the camera shuts down after 10 seconds of inactivity.
 
-6. ### Robot Processing and Output
+7. ### Robot Processing and Output
 
    The robot will process the ingredients and output the speech of possible dishes to cook.
 
