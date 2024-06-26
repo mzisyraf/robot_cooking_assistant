@@ -91,4 +91,6 @@ This is a project done for WID3010 Autonomous Robotics session 2023/2024 where w
    The robot will process the ingredients and output the speech of possible dishes to cook.
 
 ## Note
-- In the file `/scripts/text_to_speech.py`, replace the string in `API_KEY` with a valid OpenAI API key for the OpenAI Inference module to work properly
+- In the file `scripts/text_to_speech.py`, replace the string in `API_KEY` with a valid OpenAI API key for the OpenAI Inference module to work properly
+- In the file `scripts/object_detection.py`, the device number inside `cv2.VideoCapture` might need to be changed from `/dev/video2` to either `/dev/video0` or `/dev/video1` depending on the camera device name of the robot on your respective device
+- In the file `scripts/object_detection.py`, the absolute path of `best.pt` might need to be changed depending on the absolute path of it in your device
