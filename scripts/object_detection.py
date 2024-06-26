@@ -13,7 +13,7 @@ class ObjectDetectionNode:
         self.detection_complete_pub = rospy.Publisher('/detection_complete', String, queue_size=10)
 
         # Load YOLO model
-        self.model = YOLO('/home/mustar/catkin_ws/src/robot_cooking_assistant/scripts/best.pt')
+        self.model = YOLO('~/catkin_ws/src/robot_cooking_assistant/scripts/best.pt')
         self.cap = cv2.VideoCapture('/dev/video2')
 
         self.detected_items = []
