@@ -33,6 +33,15 @@ This is a project done for WID3010 Autonomous Robotics session 2023/2024 where w
    git clone https://github.com/mzisyraf/robot_cooking_assistant.git
    ```
 
+3. ### Install Dependencies
+
+   To install dependencies, run the `requirements.txt` file, run the following command in the project root directory:
+
+   ```bash
+   cd ~/catkin_ws/src/robot_cooking assistant
+   pip install -r requirements.txt
+   ```
+
 4. ### Build the Project Using `catkin_make`
 
    To build the project using `catkin_make`, run the following command in the `catkin_ws` directory:
