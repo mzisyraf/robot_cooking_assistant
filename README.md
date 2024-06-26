@@ -57,14 +57,14 @@ This is a project done for WID3010 Autonomous Robotics session 2023/2024 where w
    
    ```bash
    cd ~/catkin_ws/src/robot_cooking_assistant
-   chmod +x /launch/robotics_project.launch
-   chmod +x /launch/text_to_speech.launch
-   chmod +x /scripts/launch_sequence.sh
-   chmod +x /scripts/ingredients_detection_node.py
-   chmod +x /scripts/object_detection.py
-   chmod +x /scripts/text_to_speech.py
-   chmod +x /scripts/text_to_speech_controller.py
-   chmod +x /scripts/train_yolov8.py
+   chmod +x launch/robotics_project.launch
+   chmod +x launch/text_to_speech.launch
+   chmod +x scripts/launch_sequence.sh
+   chmod +x scripts/ingredients_detection_node.py
+   chmod +x scripts/object_detection.py
+   chmod +x scripts/text_to_speech.py
+   chmod +x scripts/text_to_speech_controller.py
+   chmod +x scripts/train_yolov8.py
    ```
 
 7. ### Run the Launch Sequence File
