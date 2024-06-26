@@ -8,6 +8,8 @@ import openai
 from openai import OpenAI
 from std_srvs.srv import Empty, EmptyResponse
 
+API_KEY = "YOUR-API-KEY"
+
 
 class TextToSpeechNode:
     def __init__(self):
@@ -37,7 +39,7 @@ class TextToSpeechNode:
 
     def get_recipes(self, ingredients):
         client = OpenAI(
-            api_key="YOUR API KEY"
+            api_key=API_KEY
         )
         ingredients_str = ", ".join(ingredients)
         prompt = f"{ingredients_str}. From these ingredients, list 5 food names only that can be made."
