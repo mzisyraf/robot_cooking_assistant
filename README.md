@@ -51,7 +51,23 @@ This is a project done for WID3010 Autonomous Robotics session 2023/2024 where w
    catkin_make
    ```
 
-5. ### Run the Launch Sequence File
+5. ### Provide Permissions to All Files
+
+   Provide permission to files to run with ROS using the following commands:
+   
+   ```bash
+   cd ~/catkin_ws/src/robot_cooking_assistant
+   chmod +x launch_sequence.sh
+   chmod +x robotics_project.launch
+   chmod +x text_to_speech.launch
+   chmod +x ingredients_detection_node.py
+   chmod +x object_detection.py
+   chmod +x text_to_speech.py
+   chmod +x text_to_speech_controller.py
+   chmod +x train_yolov8.py
+   ```
+
+7. ### Run the Launch Sequence File
 
    To run the launch sequence file, first launch `roscore` on a terminal:
 
@@ -63,15 +79,14 @@ This is a project done for WID3010 Autonomous Robotics session 2023/2024 where w
 
    ```bash
    cd ~/catkin_ws/src/robot_cooking_assistant/scripts/
-   chmod +x launch_sequence.sh
    ./launch_sequence.sh
    ```
 
-7. ### Point Ingredients to the Camera
+8. ### Point Ingredients to the Camera
 
    After pointing all ingredients to the camera, wait until the camera shuts down after 10 seconds of inactivity.
 
-8. ### Robot Processing and Output
+9. ### Robot Processing and Output
 
    The robot will process the ingredients and output the speech of possible dishes to cook.
 
