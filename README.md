@@ -53,18 +53,24 @@ This is a project done for WID3010 Autonomous Robotics session 2023/2024 where w
 
 5. ### Run the Launch Sequence File
 
-   To run the launch sequence file, execute the following command:
+   To run the launch sequence file, first launch `roscore` on a terminal:
+
+   ```bash
+   roscore
+   ```
+
+   On a separate terminal, run the `launch_sequence.sh` file using the following command:
 
    ```bash
    cd ~/catkin_ws/src/robot_cooking_assistant/scripts/
    ./launch_sequence.sh
    ```
 
-6. ### Point Ingredients to the Camera
+7. ### Point Ingredients to the Camera
 
    After pointing all ingredients to the camera, wait until the camera shuts down after 10 seconds of inactivity.
 
-7. ### Robot Processing and Output
+8. ### Robot Processing and Output
 
    The robot will process the ingredients and output the speech of possible dishes to cook.
 
