@@ -52,3 +52,6 @@ This is a project done for WID3010 Autonomous Robotics session 2023/2024 where w
 6. ### Robot Processing and Output
 
    The robot will process the ingredients and output the speech of possible dishes to cook.
+
+## Note
+- In the file **/scripts/text_to_speech.py**, replace the string in API_KEY with a valid OpenAI API key for the OpenAI Inference module to work properly
