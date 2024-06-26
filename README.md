@@ -63,6 +63,7 @@ This is a project done for WID3010 Autonomous Robotics session 2023/2024 where w
 
    ```bash
    cd ~/catkin_ws/src/robot_cooking_assistant/scripts/
+   chmod +x launch_sequence.sh
    ./launch_sequence.sh
    ```
 
