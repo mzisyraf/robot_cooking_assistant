@@ -14,7 +14,7 @@ class ObjectDetectionNode:
 
         # Load YOLO model
         self.model = YOLO('home/mustar/catkin_ws/src/robot_cooking_assistant/scripts/best.pt')
-        self.cap = cv2.VideoCapture('/dev/video2')
+        self.cap = cv2.VideoCapture('/dev/video2') #Camera name might change depending on the device
 
         self.detected_items = []
         self.start_time = time.time()
@@ -22,7 +22,7 @@ class ObjectDetectionNode:
         rospy.loginfo("Object Detection Node Initialized")
 
     def run(self):
-        rate = rospy.Rate(1)  # 1Hz
+        rate = rospy.Rate(17)
         while not rospy.is_shutdown():
             success, frame = self.cap.read()
 
