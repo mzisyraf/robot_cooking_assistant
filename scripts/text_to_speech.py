@@ -8,7 +8,7 @@ import openai
 from openai import OpenAI
 from std_srvs.srv import Empty, EmptyResponse
 
-API_KEY = "YOUR-API-KEY"
+API_KEY = "YOUR-API-KEY" # Insert your OpenAI API key here
 
 
 class TextToSpeechNode:
